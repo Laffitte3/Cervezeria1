@@ -2,7 +2,7 @@
 
 {% block content %}
     {% for cerveza in cerveza_list %}
-        <h2><a href="">{{ cerveza.title }}</a></h2>
+        <h2><a href="{% url 'Cerveza_detail' cerveza.pk %}">{{ cerveza.title }}</a></h2>
         <p>{{ cerveza.author }}</p>
     {% endfor %}
 {% endblock content %}

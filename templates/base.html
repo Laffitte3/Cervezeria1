@@ -14,8 +14,9 @@
 </head>
     <body>
         <header>
-            <h1><a href="{% url 'home' %}">Anis Blog</a><h1>      
+            <h1><a href="{% url 'home' %}">Anis Blog</a><h1>
         </header>
+        <a href="{% url 'post_new' %}">Agregar nuevo Anis</a>
         <section>
             {% block content %}
             {% endblock content %}
