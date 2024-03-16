@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% for cerveza in cerveza_list %}
+        <h2><a href="">{{ cerveza.title }}</a></h2>
+        <p>{{ cerveza.author }}</p>
+    {% endfor %}
+{% endblock content %}
